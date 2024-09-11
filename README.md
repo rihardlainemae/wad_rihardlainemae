@@ -1,1 +1,3 @@
-Something something in this something
+# Team members
+Rihard Lainemäe <br /> 
+Karl Prink
