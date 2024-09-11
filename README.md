@@ -1,3 +1,4 @@
 # Team members
 Rihard Lainemäe <br /> 
-Karl Prink
+Karl Prink <br /> 
+Johanna Kasenurm
