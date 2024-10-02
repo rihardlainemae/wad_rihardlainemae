@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
+    <script src="res/js/script.js" defer></script>
     <title>Login</title>
 </head>
 <body>
     <header class="header" id="header">
         <ul>
-             <a href="index.html" class="homebutton">Home</a>
-        </ul>
-        <img id="profilepicture" src="res/images/me.png" alt="Here is your profile picture">
-    </header>
-    <div class="loginbox" id="loginbox">
-        
-        <ul class="logininf">
-            <h2>Welcome to PostIt</h2>
-            <p><a href="signup.html" class="signup">Create an account</a></p>
-            <p>or</p>
-            <p>Please log in</p>
-            <input class="loginbox" type="text" placeholder="Email" name="email">
-            <input class="loginbox" type="password" placeholder="Password" name="password">
-            <button class="loginbox" type="submit">Login</button>
-            <p><a href="forgot.html" class="signup">Forgot password</a></p>
+            <a href="index.html" class="homebutton">Home</a>
 
         </ul>
-        
+        <img id="profilepicture" src="res/images/me.png" alt="Profile Picture">
+    </header>
+    <div class="loginbox" id="loginbox">
+        <div class="logininf">
+            <h2>Welcome to PostIt</h2>
+            <p><a href="signup.html" class="signup">Create an account</a></p>
+            <a>or</a>
+            <a>Please log in</a>
+            <input class="logininput" type="text" placeholder="Email" name="email">
+            <input class="logininput" type="password" placeholder="Password" name="password">
+            <button class="loginbutton" id="loginButton" type="button">Login</button>
+            <p><a href="forgot.html" class="signup">Forgot password</a></p>
+        </div>
     </div>
 </body>
 </html>

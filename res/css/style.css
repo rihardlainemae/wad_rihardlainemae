@@ -10,18 +10,18 @@ a:hover {
 .header {
     background-color: lightgray;
     border-radius: 1pc;
-    border: 1px solid #646174;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: .5em;
     position: sticky;
     top: 0%;
+    margin-bottom: 30px;
 }
 
 #profilepicture {
-    width: 100px;
+    width: 80px;
     border-radius: 50px;
     display: flex;
     justify-content: flex-end;
@@ -29,6 +29,7 @@ a:hover {
 
 .homebutton {
     font-size: xx-large;
+    margin-right: 50px;
 }
 
 .loginbox{
@@ -36,26 +37,46 @@ a:hover {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
-padding: .5em;
+    padding-inline: 50px;
 }
 
-.logininf {
+.logininf
+ {
     background-color:  lightgrey;
     border-radius: 1pc;
-    border: 1px solid #646174;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 50px;
+    padding-inline: 40px;
+    font-size: larger;
+
 }
 
 .signup {
     font-size: larger;
     color: rgb(22, 167, 216);
 }
-
-.logininf{
-font-size: larger;
+.logininput {
+    width: 80%;  /* login ja password kasti laius*/
+    height: 25px;
+    margin: 10px 0;  /* login ja password kasti vahe*/
+    padding: 5px;
+    font-size: large;
 }
+
+.loginbutton {
+    background-color: rgb(22, 167, 216);
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-style: bold;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.loginbutton:hover {
+    background-color: lightgray;
+}
+
+
