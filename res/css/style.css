@@ -102,28 +102,26 @@ footer {
 }
 
 #profilepicture {
-    width: 80px;
+    width: 5%;
     border-radius: 50px;
     display: flex;
     justify-content: flex-end;
+    margin: 0.5%;
 }
 
 .homebutton {
-    font-size: xx-large;
+    font-size: x-large;
     margin-right: 50px;
 }
 
-.loginbox{
-
-
+.loginbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-inline: 50px;
 }
 
-.logininf
- {
+.logininf {
     background-color:  lightgrey;
     border-radius: 1pc;
     display: flex;
@@ -138,6 +136,7 @@ footer {
     font-size: larger;
     color: rgb(22, 167, 216);
 }
+
 .logininput {
     width: 80%;  /* login ja password kasti laius*/
     height: 25px;
