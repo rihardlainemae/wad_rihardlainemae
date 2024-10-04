@@ -40,6 +40,37 @@ a:hover {
     background-color: lightblue;
 }
 
+.content {
+    display: flex;
+    flex: 1; /*Allows to grow in size to fill the available space*/
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.content div {
+    background-color: lightgray;
+    border-radius: 1pc;
+}
+
+#rightpanel, #leftpanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+}
 
 footer {
     background-color: lightgrey;
