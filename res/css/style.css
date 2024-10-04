@@ -40,6 +40,16 @@ a:hover {
     background-color: lightblue;
 }
 
+
+footer {
+    background-color: lightgrey;
+    border-radius: 1pc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5%;
+    margin-top: 0%;
 }
 
 #profilepicture {
