@@ -118,6 +118,15 @@ p {
 }
 
 /* img is an immediate child of postheader or postfooter */
+.postheader > img, .postfooter > img {
+    border-radius: 1pc;
+    padding: 0%;
+    width: 6%;
+    min-width: 20px;
+    margin-left: 0%;
+}
+
+/* When the width of the screen is 400px or less */
 
 footer {
     background-color: lightgrey;
