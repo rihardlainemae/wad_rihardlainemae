@@ -110,6 +110,14 @@ p {
 }
 
 .postfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1%;
+    margin-top: 0%;
+}
+
+/* img is an immediate child of postheader or postfooter */
 
 footer {
     background-color: lightgrey;
