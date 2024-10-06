@@ -127,6 +127,16 @@ p {
 }
 
 /* When the width of the screen is 400px or less */
+@media (max-width: 400px) {
+    .content .panel {
+        display: none;
+    }
+
+    .middle .post {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
 
 footer {
     background-color: lightgrey;
