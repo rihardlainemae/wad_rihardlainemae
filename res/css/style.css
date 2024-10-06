@@ -59,18 +59,14 @@ p {
     margin-bottom: 1%;
 }
 
-.content div {
+.content .panel {
     background-color: lightgray;
     border-radius: 1pc;
-}
-
-#rightpanel, #leftpanel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 20%;
-    height: 100%;
 }
 
 #middle {
