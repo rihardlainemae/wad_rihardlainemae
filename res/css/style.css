@@ -101,6 +101,15 @@ p {
 }
 
 .postheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    margin-bottom: 0%;
+}
+
+.postfooter {
 
 footer {
     background-color: lightgrey;
