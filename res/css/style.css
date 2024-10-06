@@ -87,6 +87,12 @@ p {
 }
 
 .post img {
+    width: 98%;
+    margin: 1%;
+    margin-bottom: 0%;
+}
+
+.post p {
 
 footer {
     background-color: lightgrey;
