@@ -77,6 +77,17 @@ p {
     width: 50%; 
 }
 
+.middle .post {
+    background-color: lightgrey;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border-radius: 1pc;
+    padding: 0%;
+}
+
+.post img {
+
 footer {
     background-color: lightgrey;
     border-radius: 1pc;
