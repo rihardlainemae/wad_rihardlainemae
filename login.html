@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
     <script src="res/js/script.js" defer></script>
-    <title>Login</title>
+    <title>Login - PostIt</title>
 </head>
 <body>
     <header class="header" id="header">
-        <ul class="nav">
+        <nav class="nav">
             <a href="index.html" class="homebutton">Home</a>
-
-        </ul>
+            <a href="addPost.html" class="addPost">Add Post</a>
+        </nav>
         <img id="profilepicture" src="res/images/me.png" alt="Profile Picture">
     </header>
+    
     <div class="loginbox" id="loginbox">
         <div class="logininf">
             <h2>Welcome to PostIt</h2>
             <p><a href="signup.html" class="signup">Create an account</a></p>
-            <a>or</a>
-            <a>Please log in</a>
-            <input class="logininput" type="text" placeholder="Email" name="email">
-            <input class="logininput" type="password" placeholder="Password" name="password">
+            <p>or</p>
+            <p>Please log in</p>
+            <form id="loginForm">
+                <input class="logininput" type="text" placeholder="Email" name="email" required>
+                <input class="logininput" type="password" placeholder="Password" name="password" required>
+            </form>
             <button class="loginbutton" id="loginButton" type="button">Login</button>
             <p><a href="forgot.html" class="signup">Forgot password</a></p>
         </div>
     </div>
+
+    <footer>
+
+    </footer>
 </body>
 </html>

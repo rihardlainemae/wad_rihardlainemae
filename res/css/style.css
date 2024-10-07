@@ -28,7 +28,6 @@ p {
 }
 
 nav {
-    background-color: #333;
     color: white;
     padding: 10px;
     display: flex;
@@ -169,7 +168,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0.5%;
     margin-top: 0%;
 }
@@ -203,6 +202,7 @@ footer {
     align-items: center;
     padding-inline: 40px;
     font-size: larger;
+    margin: 50px;
 
 }
 
@@ -226,10 +226,11 @@ footer {
 .signup {
     font-size: larger;
     color: rgb(22, 167, 216);
+    align-items: center;
 }
 
 .logininput {
-    width: 80%;  /* login ja password kasti laius*/
+    width: auto;
     height: 25px;
     margin: 10px 0;  /* login ja password kasti vahe*/
     padding: 5px;
@@ -240,7 +241,7 @@ footer {
     background-color: rgb(22, 167, 216);
     color: white;
     width: 100px;
-    height: 35px;
+    height: 50px;
     font-style: bold;
     font-size: larger;
     margin-top: 10px;
