@@ -27,6 +27,31 @@ p {
     margin-bottom: 1%;
 }
 
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -181,6 +206,23 @@ footer {
 
 }
 
+.postbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+}
+
+.postinf {
+    background-color:  lightgrey;
+    border-radius: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 40px;
+    font-size: larger;
+}
+
 .signup {
     font-size: larger;
     color: rgb(22, 167, 216);
@@ -208,4 +250,28 @@ footer {
     background-color: lightgray;
 }
 
-
+main {
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    margin-top: 5px;
+}
+input[type="file"] {
+    margin-top: 5px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #234bce;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #20308d;
+}
