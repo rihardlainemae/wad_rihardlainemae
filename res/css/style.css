@@ -275,3 +275,7 @@ button {
 button:hover {
     background-color: #20308d;
 }
+textarea {
+    resize: none;
+    
+}
