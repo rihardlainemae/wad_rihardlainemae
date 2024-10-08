@@ -152,6 +152,12 @@ nav ul li a {
     margin-left: 0%;
 }
 
+/* Matches a p element that directly follows the img element in the postheader. */
+.postheader > img + p {
+    color: dimgray;
+    word-spacing: 8px;   
+}
+
 /* When the width of the screen is 500px or less */
 @media (max-width: 500px) {
     .content .panel {
@@ -210,6 +216,7 @@ footer {
     margin: 50px;
 }
 
+/*Matches all the p elements that come after the h2 element that have the same parent*/
 .logininf h2 ~ p {
     margin-top: 0%;
     margin-bottom: 0%;
