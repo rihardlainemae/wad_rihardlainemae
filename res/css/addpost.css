@@ -1,0 +1,36 @@
+/* posts.css */
+.postbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+}
+
+.postinf {
+    background-color: lightgrey;
+    border-radius: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-inline: 40px;
+    font-size: larger;
+}
+
+textarea {
+    resize: none;  
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #234bce;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #20308d;
+}

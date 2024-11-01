@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
     <link rel="stylesheet" href="res/css/style.css">
-    <title>addPost</title>
+    <link rel="stylesheet" href="res/css/addpost.css">
+    <title>Add Post</title>
+    <script defer src="res/js/dropdown.js"></script>
 </head>
 <body>
+
     <header class="header" id="header">
         <ul class="nav">
-            <a href="index.html" class="homebutton">Home</a>
-
+            <a href="index.html" class="homebutton">Home</a> 
+            <a href="addPost.html" class="homebutton">Add Post</a>
         </ul>
-        <a href="login.html" id="profilepicture">
-            <img id="profilepicture" src="res/images/me.png" alt="Profile Picture">
-        </a>
+        
+        <div class="profile-dropdown">
+            <a href="#" id="profilepicture">
+                <img src="res/images/me.png" alt="Profile Picture">
+            </a>
+            <div id="dropdownMenu" class="dropdown-content">
+                <p>JohnDoe</p>
+                <p>john@example.com</p>
+                <a href="login.html" id="loginLogout">Login</a>
+            </div>
+        </div>
     </header>
     <main>
         <div class="postbox" id="postbox">

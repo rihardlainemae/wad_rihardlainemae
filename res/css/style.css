@@ -302,3 +302,41 @@ button:hover {
 textarea {
     resize: none;  
 }
+
+/* Profile dropdown styling */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#profilepicture img {
+    cursor: pointer;
+
+    height: 100px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: lightgray
+    ;
+    min-width: 160px;
+    padding: 12px 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content p, .dropdown-content a {
+    margin: 8px 0;
+    color: #333;
+    text-decoration: none;
+}
+

@@ -1,0 +1,95 @@
+/* index.css */
+.content {
+    display: flex;
+    flex: 1; /* Allows to grow in size to fill the available space */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.content .panel {
+    background-color: lightgray;
+    border-radius: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+#middle {
+    display: flex;
+    flex: 1; /* Allows to grow in size (horisontally) */
+    flex-direction: column;
+    align-items: center;
+    width: 50%; 
+}
+
+.middle .post {
+    background-color: lightgrey;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border-radius: 1pc;
+    padding: 0%;
+}
+
+.post img {
+    width: 98%;
+    margin: 1%;
+    margin-bottom: 0%;
+}
+
+.post p {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    font-size: large;
+}
+
+.postheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    margin-bottom: 0%;
+}
+
+.postfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1%;
+    margin-top: 0%;
+}
+
+/* img is an immediate child of postheader or postfooter */
+.postheader > img, .postfooter > img {
+    border-radius: 1pc;
+    padding: 0%;
+    width: 6%;
+    min-width: 20px;
+    margin-left: 0%;
+}
+
+/* Matches a p element that directly follows the img element in the postheader. */
+.postheader > img + p {
+    color: dimgray;
+    word-spacing: 8px;   
+}
+
+/* When the width of the screen is 500px or less */
+@media (max-width: 500px) {
+    .content .panel {
+        display: none;
+    }
+
+    .middle .post {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
