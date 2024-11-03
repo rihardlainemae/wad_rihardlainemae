@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    /* Fetch data from a server
+    /* Fetch data from a server. The JSON file was stored on this website: https://jsonbin.io/app/bins
     fetch('https://api.jsonbin.io/v3/b/6721ec86ad19ca34f8c0e84f')
         .then((response) => response.json())
         .then(json => {
@@ -23,7 +23,7 @@ window.onload = function() {
                 
                 // Content of the post header
                 let profile_pic = document.createElement('img');
-                profile_pic.src = posts[i].profile_pic_url;
+                profile_pic.src = posts[i].profile_pic;
                 profile_pic.alt = "Profile picture";
                 let date = document.createElement('p');
                 date.innerText = posts[i].date;
@@ -36,10 +36,10 @@ window.onload = function() {
                 post_div.appendChild(header_div);
 
                 // Check if the json object has an 'image_url' key
-                if (posts[i].hasOwnProperty('img_url')) {
+                if (posts[i].hasOwnProperty('img')) {
                     // Create an image element for the post image
                     let post_image = document.createElement('img');
-                    post_image.src = posts[i].img_url;
+                    post_image.src = posts[i].img;
                     post_image.alt = "Post image";
 
                     // Append the image to the post div
@@ -75,6 +75,7 @@ window.onload = function() {
             middle_div.appendChild(errDiv)
             })
     */
+    
 
     // Fetch data from a local file
     fetch('/res/json/posts.json')
@@ -96,7 +97,7 @@ window.onload = function() {
             
             // Content of the post header
             let profile_pic = document.createElement('img');
-            profile_pic.src = json[i].profile_pic_url;
+            profile_pic.src = json[i].profile_pic;
             profile_pic.alt = "Profile picture";
             let date = document.createElement('p');
             date.innerText = json[i].date;
@@ -109,10 +110,10 @@ window.onload = function() {
             post_div.appendChild(header_div);
 
             // Check if the json object has an 'image_url' key
-            if (json[i].hasOwnProperty('img_url')) {
+            if (json[i].hasOwnProperty('img')) {
                 // Create an image element for the post image
                 let post_image = document.createElement('img');
-                post_image.src = json[i].img_url;
+                post_image.src = json[i].img;
                 post_image.alt = "Post image";
 
                 // Append the image to the post div
@@ -147,5 +148,4 @@ window.onload = function() {
         // document.body.appendChild(errDiv);
         middle_div.appendChild(errDiv)
         })
-    
 }
