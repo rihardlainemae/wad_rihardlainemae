@@ -193,6 +193,8 @@ footer {
 .homebutton {
     font-size: x-large;
     margin-right: 50px;
+    /* Keeps the text on one line */
+    white-space: nowrap;
 }
 
 .loginbox {
