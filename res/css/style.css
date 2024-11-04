@@ -14,7 +14,7 @@ p {
 }
 
 .header {
-    background-color: lightgray;
+    background-color: rgb(162, 209, 212);
     border-radius: 1pc;
 
     display: flex;
@@ -171,7 +171,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: rgb(162, 209, 212);
     border-radius: 1pc;
     display: flex;
     flex-direction: row;
