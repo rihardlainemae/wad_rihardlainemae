@@ -53,10 +53,13 @@
 .postheader {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: normal;
     align-items: center;
     margin: 1%;
     margin-bottom: 0%;
+}
+.postheader p {
+    justify-content: space-between;
 }
 
 .postfooter {
