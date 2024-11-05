@@ -21,15 +21,25 @@ window.onload = function() {
                 let header_div = document.createElement('div');
                 header_div.className = 'postheader';
                 
-                // Content of the post header
+                // Content of the user div
                 let profile_pic = document.createElement('img');
                 profile_pic.src = posts[i].profile_pic;
                 profile_pic.alt = "Profile picture";
+                let username = document.createElement('p')
+                username.innerText = posts[i].username;
+                
+                // Content of the post header
                 let date = document.createElement('p');
                 date.innerText = posts[i].date;
 
+                // Create a div for the profile picture and username
+                let user_div = document.createElement('div');
+                user_div.className = 'user';
+
                 // Append header content to the header
-                header_div.appendChild(profile_pic);
+                user_div.appendChild(profile_pic);
+                user_div.appendChild(username)
+                header_div.appendChild(user_div)
                 header_div.appendChild(date);
 
                 // Append header div to the post div
@@ -74,7 +84,8 @@ window.onload = function() {
             // document.body.appendChild(errDiv);
             middle_div.appendChild(errDiv)
             })
-    */
+        */
+    
     
 
     // Fetch data from a local file
