@@ -99,11 +99,14 @@ window.onload = function() {
             let profile_pic = document.createElement('img');
             profile_pic.src = json[i].profile_pic;
             profile_pic.alt = "Profile picture";
+            let username = document.createElement('p')
+            username.innerText = json[i].username;
             let date = document.createElement('p');
             date.innerText = json[i].date;
 
             // Append header content to the header
             header_div.appendChild(profile_pic);
+            header_div.appendChild(username)
             header_div.appendChild(date);
 
             // Append header div to the post div
