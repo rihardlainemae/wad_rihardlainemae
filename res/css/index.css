@@ -53,7 +53,7 @@
 .postheader {
     display: flex;
     flex-direction: row;
-    justify-content: normal;
+    justify-content: space-between;
     align-items: center;
     margin: 1%;
     margin-bottom: 0%;
@@ -70,8 +70,18 @@
     margin-top: 0%;
 }
 
-/* img is an immediate child of postheader or postfooter */
-.postheader > img, .postfooter > img {
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user p {
+    color: dimgray;
+}
+
+/* img is an immediate child of user or postfooter class */
+.user > img, .postfooter > img {
     border-radius: 1pc;
     padding: 0%;
     width: 6%;
@@ -79,10 +89,12 @@
     margin-left: 0%;
 }
 
-/* Matches a p element that directly follows the img element in the postheader. */
-.postheader > img + p {
+/* Matches a p element that directly follows the user class. */
+.user + p {
     color: dimgray;
-    word-spacing: 8px;   
+    word-spacing: 8px; 
+    /* Keeps the text on one line */
+    white-space: nowrap;  
 }
 
 /* When the width of the screen is 500px or less */

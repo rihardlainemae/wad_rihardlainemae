@@ -94,19 +94,26 @@ window.onload = function() {
             // Create a div for the post header
             let header_div = document.createElement('div');
             header_div.className = 'postheader';
+
+            // Create a div for the profile picture and username
+            let user_div = document.createElement('div');
+            user_div.className = 'user';
             
-            // Content of the post header
+            // Content of the user div
             let profile_pic = document.createElement('img');
             profile_pic.src = json[i].profile_pic;
             profile_pic.alt = "Profile picture";
             let username = document.createElement('p')
             username.innerText = json[i].username;
+            
+            // Content of the post header
             let date = document.createElement('p');
             date.innerText = json[i].date;
 
             // Append header content to the header
-            header_div.appendChild(profile_pic);
-            header_div.appendChild(username)
+            user_div.appendChild(profile_pic);
+            user_div.appendChild(username)
+            header_div.appendChild(user_div)
             header_div.appendChild(date);
 
             // Append header div to the post div
