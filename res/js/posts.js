@@ -78,7 +78,7 @@ window.onload = function() {
     
 
     // Fetch data from a local file
-    fetch('/res/json/posts.json')
+    fetch('res/json/posts.json')
     .then((response) => response.json())
     .then(json => {
         console.log(json);
