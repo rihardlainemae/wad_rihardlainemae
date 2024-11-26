@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/signup.css">
+    <title>Signup</title>
+    <script defer src="res/js/dropdown.js"></script>
+    <script defer src="res/js/signup.js"></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <ul class="nav">
+            <a href="index.html" class="homebutton">Home</a> 
+            <a href="addPost.html" class="homebutton">Add Post</a>
+        </ul>
+        
+        <div class="profile-dropdown">
+            <a href="#" id="profilepicture">
+                <img src="res/images/me.png" alt="Profile Picture">
+            </a>
+            <div id="dropdownMenu" class="dropdown-content">
+                <p>John Doe</p>
+                <p>john@example.com</p>
+                <a href="login.html" id="loginLogout">Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="signupBox">
+            <div class="signupinf">
+                <h2>Signup</h2>
+                <form action="index.html">
+                    <label for="Email">Email:</label>
+                    <input class="logininput" type="text" placeholder="Email" name="email" required>
+                
+                    <label for="password">Password:</label>
+                    <input class="logininput" id="password" type="password" placeholder="Password" name="password" required>
+                    
+                </form>
+                <button id="signupButton" type="button" onclick="validatePassword()">Submit</button>
+                <p id="validationMessage"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
